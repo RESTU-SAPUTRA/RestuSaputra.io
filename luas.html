@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restu-Saputra</title>
+
+</head>
+<body>
+    <h2>Berikut ini tugas menghitung luas dan calkulator</h2>
+    <button onclick="segitiga()">Hitung_Segitiga</button>
+    <button><a href="kalkulator.html">Kalkulator</a></button>
+    <script>
+        function segitiga(){
+       var alas= prompt ("input nilai alas", "");
+       var tinggi = prompt ("input nilai tinggi", "");
+       var luas_segitiga = 0.5 * alas * tinggi;
+       document.write (`
+       luas segitiga yang mempunyai : 
+       <br><b>Alas: ${alas}</b>
+       <br><b>Tinggi: ${tinggi}</b>
+       <br><b>adalah: ${luas_segitiga}</b>
+       `);
+        }
+    </script>
+</body>
+</html>
